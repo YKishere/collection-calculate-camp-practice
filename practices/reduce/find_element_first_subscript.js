@@ -2,7 +2,7 @@
 
 function find_element_first_subscript(collection, element) {
   //在这里写入代码
-  for (var i in collection) {
+  for (var i = 0; i < collection.length; i++) {
     if (element == collection[i]) {
       return i;
       break
@@ -11,7 +11,6 @@ function find_element_first_subscript(collection, element) {
     }
   }
 }
-
 
 module.exports = find_element_first_subscript;
 
